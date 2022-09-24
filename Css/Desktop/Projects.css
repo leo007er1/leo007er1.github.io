@@ -61,6 +61,8 @@
 .projectCard img {
     height: 100%;
     margin-left: 51px;
+    border-radius: 25px;
+    opacity: 0.4;
 
     position: absolute;
     top: 0;
