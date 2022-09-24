@@ -32,7 +32,6 @@
 
 .projectsBackButton svg {
     fill: var(--textColor);
-    transform: rotate(0.5turn);
     margin-right: 8px;
     width: 20px;
 
