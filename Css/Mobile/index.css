@@ -1,0 +1,97 @@
+
+
+
+/* Main content */
+
+
+
+
+
+.heroSection {
+    margin-left: 5%;
+    margin-top: 30%;
+}
+
+
+.mainSubtitle {
+    color: var(--accentColor);
+    font-size: clamp(0.7em, 1.1em, 2em);
+    font-weight: 900;
+
+    margin: 0;
+}
+
+
+.mainTitle {
+    color: var(--textColor);
+    font-size: clamp(1.5em, 2.8em, 4em);
+    font-weight: 900;
+    line-height: 115%;
+
+    margin: 0px;
+}
+
+
+.mainDescription {
+    color: var(--secondaryTextColor);
+    font-size: clamp(0.9em, 1em, 2.5em);
+    font-weight: 700;
+
+    margin: 20px 0px 50px 0px;
+}
+
+
+.mainHeroButton {
+    outline: none;
+    text-decoration: none;
+    color: var(--secondaryTextColor);
+    background-color: transparent;
+    font-weight: 800;
+    font-size: clamp(0.7em, 1.1em, 2em);
+    cursor: pointer;
+
+    padding: 8px 0px 8px 20px;
+    border: 2px solid var(--accentColor);
+    border-radius: 20px;
+
+    transition: background-color var(--animationDuration), color var(--animationDuration);
+}
+
+
+.mainHeroButton svg {
+    fill: var(--secondaryTextColor);
+    margin-right: 35px;
+    margin-left: 8px;
+
+    transition: fill var(--animationDuration), margin-left var(--animationDuration), margin-right var(--animationDuration);
+}
+
+
+
+/* Animations */
+
+
+
+.mainHeroButton:hover {
+    background-color: var(--accentColor);
+    color: var(--textColor);
+}
+
+
+.mainHeroButton:hover svg {
+    fill: var(--textColor);
+    margin-left: 35px;
+    margin-right: 8px;
+}
+
+
+
+/* Media queries */
+
+
+
+@media screen and (min-width: 800px) {
+    .mainDescription {
+        font-size: clamp(0.7em, 1.1em, 2em);
+    }
+}

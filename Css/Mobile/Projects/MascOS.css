@@ -1,0 +1,145 @@
+
+
+
+/* Main content */
+
+
+
+
+.titleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin-top: 8%;
+    margin-left: 5%;
+}
+
+
+.projectsBackButton {
+    text-decoration: none;
+    color: var(--textColor);
+    font-size: clamp(0.5em, 1em, 3em);
+    font-weight: 700;
+    margin-top: 70px;
+
+    display: flex;
+    align-items: center;
+
+    transition: color var(--animationDuration);
+}
+
+
+.projectsBackButton svg {
+    fill: var(--textColor);
+    transform: rotate(0.5turn);
+    margin-right: 8px;
+    width: 20px;
+
+    transition: fill var(--animationDuration), margin-left var(--animationDuration), margin-right var(--animationDuration);
+}
+
+
+.mainTitle {
+    color: var(--textColor);
+    font-size: clamp(1em, 3.3em, 5em);
+    font-weight: 900;
+
+    margin: 0px;
+    margin-top: -10px;
+}
+
+
+.mainTitleLeft {
+    text-decoration: none;
+    color: var(--textColor);
+    font-size: 0.7em;
+    font-weight: 700;
+
+    transition: color var(--animationDuration);
+}
+
+
+
+/* Project info */
+
+
+
+.projectInfo {
+    margin-top: 0%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.projectDescription {
+    width: 90%;
+    color: var(--secondaryTextColor);
+    font-size: clamp(0.5em, 1em, 2em);
+    font-weight: 600;
+
+    word-wrap: break-word;
+}
+
+
+.projectDescription a {
+    text-decoration: none;
+    color: var(--accentColor);
+}
+
+
+.projectImages {
+    margin-top: 30px;
+    width: 90%;
+}
+
+
+.projectImages img {
+    width: 100%;
+}
+
+
+
+/* Animations */
+
+
+
+.projectsBackButton:hover {
+    color: var(--accentColor);
+}
+
+
+.projectsBackButton:hover svg {
+    fill: var(--accentColor);
+    margin-left: -20px;
+    margin-right: 35px;
+}
+
+
+.mainTitleLeft:hover {
+    color: var(--accentColor);
+}
+
+
+
+/* Media queries */
+
+
+
+@media screen and (max-width: 500px) {
+    .projectsBackButton {
+        font-size: clamp(0.5em, 0.9em, 3em);
+    }
+    
+    .projectsBackButton svg {
+        width: 18px;
+    }
+
+    .mainTitle {
+        font-size: clamp(1em, 2.3em, 5em);
+        margin-top: 0px;
+    }
+}
