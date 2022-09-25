@@ -136,6 +136,8 @@
 .projectPageButton svg {
     fill: var(--textColor);
     margin-left: 12px;
+    transform: rotate(0.5turn);
+    width: 22px;
 
     transition: fill var(--animationDuration);
 }

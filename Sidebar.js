@@ -30,7 +30,10 @@ sidebarButton[0].addEventListener("click", () => {
 });
 
 
-sidebarCloseButton[0].addEventListener("click", () => {
+sidebarCloseButton[0].addEventListener("click", async function(event) {
+    // Disable page reloading
+    event.preventDefault();
+    
     if (deviceOrientation != true) {
         return;
     }
@@ -38,13 +41,23 @@ sidebarCloseButton[0].addEventListener("click", () => {
     if (isMenuOpen) {
         // Sets transition values to their original value
         sidebarMobileMenu[0].style.backgroundColor = "rgba(29, 31, 37, 0)";
-        sidebarButtons[0].style.bottom = "-4%"
-        sidebarCloseButton[0].style.right = "-100px";
+        sidebarButtons[0].style.bottom = "-9%"
+        sidebarCloseButton[0].style.right = "-150px";
+
+        await WaitAnimPlayTime();
         sidebarMobileMenu[0].style.visibility = "hidden";
         
         isMenuOpen = false;
     }
 });
+
+
+// Waits 0.5s, the time that transitions take
+function WaitAnimPlayTime() {
+    return new Promise(resolve => {
+        setTimeout(resolve, 500);
+    });
+}
 
 
 // If the height of the window is higher that width we aren't in landscape mode

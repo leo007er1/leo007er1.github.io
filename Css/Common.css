@@ -1,7 +1,4 @@
 
-/* Imports font(Nunito Sans) */
-/* @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800;900&display=swap'); */
-
 
 :root {
     /* Colors used */
@@ -15,6 +12,7 @@
 
 
 /* Sets every text-type tag to the font we imported */
+/* The font(Nunito Sans) is imported from .html files */
 a, h1, p, h2 {
     font-family: "Nunito Sans";
 }
